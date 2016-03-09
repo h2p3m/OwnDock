@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="OwnDock.exe" version="1.0.0.7" publicKeyToken="bcf57d07ee9412ef" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="OwnDock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="OwnDock.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OwnDock.exe" size="13264">
+      <assemblyIdentity name="OwnDock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EQqWaGc5vCwE9S5TgonmrL1zmPpBBfUvHXmiDmkqhdg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="OwnDock.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=TANKPAD\Hans-Peter" issuerKeyHash="856adf6511ab258ce44294578333915714cd4fe6" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>fZaGJHWRfmbnHjeWeq/zBzzfHG5Q59NT1sXf2i41qpA=</DigestValue></Reference></SignedInfo><SignatureValue>cSh1FxAdsG6CcbVHSIEW1EHHTURl9SAMlDjuVoeR4KFzbQkjCRI8NbVcTsDkruywnRUJf9Cx6ELt4LHnerdCNzJ0mB/7TUUWhB7WXWXAqLe9hvNEDFl1tMDxYScryhRB70SDGKRsyIj5LED96cjWBvdgVclJz0jn875gQXUtIf0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>p50sTiorenhr3y5ct5Rz81WZfKZVERNyWj6GubNK9uikscxXIa5/OWnwSwnKEwNWbK/oVZbG5xatYww2f+8s/ZskswG130dP3LXEL+tnqyGAfrC5PkPJRB5GNE6bk0uqX3QbRkidouZqIs/6RAlRk7vAGmDTx3AMBKdFWdqqnBs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="90aa352edadfc5d653d3e7506e1cdf3c07f3af7a96371ee7667e91752486967d" Description="" Url=""><as:assemblyIdentity name="OwnDock.exe" version="1.0.0.7" publicKeyToken="bcf57d07ee9412ef" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=TANKPAD\Hans-Peter</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>mdReIylMwGD+1UtURBkHpsH321GdJ96HZGFzEVxvf6A=</DigestValue></Reference></SignedInfo><SignatureValue>AE7nNiBAoMcjb90Sr0SG3qouqiI1o5OCjrV3n+M3F0IxtIcNwvoR5boTBZ7k0cgd0x0P8vgENMRHsyXAur9/IrZ3+XNj5LN93MDStLoUH3/hTNL8JWq/xglMj3lRJgn+Owom2whm5SqDCHMN7LuZJKiVHn5WnyRS90BEF90D3Uw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>p50sTiorenhr3y5ct5Rz81WZfKZVERNyWj6GubNK9uikscxXIa5/OWnwSwnKEwNWbK/oVZbG5xatYww2f+8s/ZskswG130dP3LXEL+tnqyGAfrC5PkPJRB5GNE6bk0uqX3QbRkidouZqIs/6RAlRk7vAGmDTx3AMBKdFWdqqnBs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB4TCCAUqgAwIBAgIQMkBEtl72ea1IAIrS/b/2jzANBgkqhkiG9w0BAQsFADAvMS0wKwYDVQQDHiQAVABBAE4ASwBQAEEARABcAEgAYQBuAHMALQBQAGUAdABlAHIwHhcNMTYwMjI5MjEyMTM5WhcNMTcwMzAxMDMyMTM5WjAvMS0wKwYDVQQDHiQAVABBAE4ASwBQAEEARABcAEgAYQBuAHMALQBQAGUAdABlAHIwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAKedLE4qK3p4a98uXLeUc/NVmXymVRETclo+hrmzSvbopLHMVyGufzlp8EsJyhMDVmyv6FWWxucWrWMMNn/vLP2bJLMBtd9HT9y1xC/rZ6shgH6wuT5DyUQeRjROm5NLql90G0ZInaLmaiLP+kQJUZO7wBpg08dwDASnRVnaqpwbAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAW7+Tsh0KTEyP+0hTTAmbOjVMuhscrjvLFSaE5Wo5Bvw0BwMFZ5eu8l1stBw8vd9RnfySk555x/VL1Kikz9l7sY+QMSqmWw22R6b7WL1nbKTV83BC6mPMMTcW12zLFaW2RrM7O7NarNkZoDF+ITmpcTVSLy7nCMxA0qNxYPOBGQ0=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

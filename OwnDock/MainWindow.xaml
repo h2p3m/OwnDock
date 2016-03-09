@@ -1,0 +1,20 @@
+﻿<Window x:Class="OwnDock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OwnDock" Height="350" Width="525" ResizeMode="NoResize" WindowStartupLocation="Manual" Background="{x:Null}" Focusable="False" AllowsTransparency="True" WindowStyle="None" ShowInTaskbar="False" LostFocus="Window_LostFocus" Deactivated="Window_Deactivated" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="311*"/>
+        </Grid.RowDefinitions>
+        <ListView Name="Pool" Height="309" VerticalAlignment="Top" AllowDrop="True" ItemsSource="{Binding Files}" Drop="ImagePanel_Drop" Margin="0,2,0,0" Grid.Row="1" Background="#FF0071A2" Opacity="0.95" Foreground="#FF3DF5FF">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <EventSetter Event="MouseLeftButtonUp" Handler="ListViewItem_PreviewMouseLeftButtonDown" />
+                </Style>
+            </ListView.ItemContainerStyle>
+        </ListView>
+        <Rectangle x:Name="Header" Fill="#FF003A59" HorizontalAlignment="Left" Height="39" Stroke="Black" VerticalAlignment="Top" Width="525" MouseLeftButtonDown="Window_MouseLeftButtonDown"/>
+        <Label Content="OwnDock" HorizontalAlignment="Center" Height="39" Margin="10,0" VerticalAlignment="Center" Width="505" FontSize="23" FontFamily="Frutiger LT Std 95 UltraBlack" TextOptions.TextFormattingMode="Display" MouseLeftButtonDown="Window_MouseLeftButtonDown" Foreground="White"/>
+    </Grid>
+</Window>
